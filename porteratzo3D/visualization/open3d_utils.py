@@ -46,7 +46,7 @@ def to_tensor_o3d(pcd: o3d.geometry.PointCloud) -> o3d.t.geometry.PointCloud:
     return t_pcd
 
 
-def cloudsave(points, Path):
+def cloudsave(points: np.ndarray, Path: str) -> o3d.geometry.PointCloud:
     pcd = o3d.PointCloud()
     pcd.points = o3d.utility.Vector3dVector(points)
     o3d.write_point_cloud(Path + ".ply", pcd)

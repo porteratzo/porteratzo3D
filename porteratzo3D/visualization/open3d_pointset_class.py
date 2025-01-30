@@ -184,7 +184,7 @@ class O3dPointSetClass(PointSetClass):
             if self.is_visible:
                 self.remove(app_object)
 
-    def render_colorbar(self, app_object):
+    def render_colorbar(self, app_object: MyO3dApp) -> None:
         color_d_n_vector = len(self.plt_colors.shape) == 1
         color_2d_nx1_vector = len(self.plt_colors.shape) == 2 and self.plt_colors.shape[1] == 1
         color_2d_nx3_matrix = len(self.plt_colors.shape) == 2 and self.plt_colors.shape[1] == 3

@@ -14,7 +14,6 @@ setup(
         "matplotlib",
         "numpy",
         "open3d",
-        "porter_bench @ git+https://github.com/porteratzo/tictoc.git@main",
     ],
     python_requires='>=3.7,<3.11',
     classifiers=[

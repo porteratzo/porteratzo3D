@@ -333,7 +333,7 @@ class open3dpaint_non_blocking:
 
                 time.sleep(0.02)
 
-    def get_perspective(self):
+    def get_perspective(self) -> None:
         self.T = self.myapp.o3d_visualizer.scene.camera.get_view_matrix()
 
     def save_state(self) -> None:
@@ -367,7 +367,7 @@ class open3dpaint_non_blocking:
         exit_vis = False
         for step in state:
             for pointset_key in step.keys():
-                self._update_points(
+                self.update_points(
                     step[pointset_key]["points"],
                     pointset=pointset_key,
                     color=step[pointset_key]["colors"],

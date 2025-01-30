@@ -2,8 +2,6 @@ from porteratzo3D.create_geometries import make_sphere, make_cylinder, make_plan
 from porteratzo3D.visualization.open3d_pointset_class import O3dPointSetClass
 from porteratzo3D.visualization.open3d_vis_non_blocking import open3dpaint_non_blocking
 from typing import List
-import faulthandler
-faulthandler.enable()
 
 
 def main():
